@@ -1,0 +1,55 @@
+
+<html>
+<head>
+    <title>All Attendance Records</title>
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #f0f2f5;
+            padding: 40px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: auto;
+            background-color: white;
+        }
+
+        th, td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2>📋 All Students Attendance Records</h2>
+    <table>
+        <tr>
+            <th>Username</th>
+            <th>Password</th> <!-- Optional: Avoid in production -->
+            <th>Date</th>
+        </tr>
+        {% for student in students %}
+        <tr>
+            <td>{{ student.Username }}</td>
+            <td>{{ student.Password }}</td>
+            <td>{{ student.date }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
+
+</body>
+</html>
