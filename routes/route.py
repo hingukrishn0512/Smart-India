@@ -6,16 +6,6 @@ from config.connection import conn
 from datetime import datetime
 
 
-
-app_router = APIRouter()
-templates = Jinja2Templates(directory="templates")
-from datetime import datetime
-from fastapi import APIRouter, Form, Request
-from fastapi.templating import Jinja2Templates
-from fastapi.responses import HTMLResponse, RedirectResponse
-from starlette.status import HTTP_302_FOUND
-from config.connection import conn
-
 app_router = APIRouter()
 templates = Jinja2Templates(directory="templates")
 
